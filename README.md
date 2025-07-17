@@ -7,7 +7,7 @@ I have been working as professional project and program manager since 2016 and a
 
 ---
 
-
+![counter top lab](https://github.com/TechHutTV/homelab/blob/main/storage/homelab.png)
 
 
 
