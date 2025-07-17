@@ -7,11 +7,6 @@ I have been working as professional project and program manager since 2016 and a
 
 ---
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=josiahboman&theme=dark)](https://git.io/streak-stats)
-
----
-
-
 Analytics:
 
 ![sonarqubeicon](https://img.shields.io/badge/Sonarqube-5190cf?style=for-the-badge&logo=sonarqube&logoColor=white)
@@ -26,11 +21,6 @@ Automation & CI/CD:
 ![terraformicon](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![jenkinsicon](https://img.shields.io/badge/Jenkins-49728B?style=for-the-badge&logo=jenkins&logoColor=white)
 ![githubactionsicon](https://img.shields.io/badge/Github%20Actions-282a2e?style=for-the-badge&logo=githubactions&logoColor=367cfe)
-
-Cloud:
-
-![awsicon](	https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-
 
 3rd Party software integration:
 
