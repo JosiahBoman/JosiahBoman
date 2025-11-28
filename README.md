@@ -10,6 +10,7 @@ I have been working as a Technical Program Manager (TPgM) and Systems Engineer (
 Some cool things I've worked on:
 
 <img width="404" height="212" alt="image" src="https://github.com/user-attachments/assets/8aea4459-2ef5-4985-94fe-44fb138283c3" />
+
 HA redundant storage with 200 days+ of uptime as of November 2025.
 
 
