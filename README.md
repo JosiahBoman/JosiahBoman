@@ -18,7 +18,7 @@
 
 Technical Program Manager and Systems Engineer with **10+ years** leading cross-functional teams to deliver end-to-end full stack software development projects. I've engaged a diverse spectrum of clients including **Fortune 500 companies**, **Venture Capital-backed startups**, the **U.S. Congress**, the **Central Intelligence Agency**, and the **Intelligence Community**.
 
-Currently driving technical programs at **Google Public Sector**, bringing together my expertise in distributed systems, cloud architecture, and program management.
+Currently driving technical programs at **Google Public Sector**, bringing together my expertise in distributed systems, cloud architecture, and technical program management.
 
 ---
 
@@ -39,9 +39,9 @@ Currently driving technical programs at **Google Public Sector**, bringing toget
 
 | Degree | Institution |
 |--------|-------------|
-| **M.S. Systems Engineering** | Johns Hopkins Whiting School of Engineering |
-| **B.A. Interdisciplinary Studies** | University of Missouri-Columbia |
-| **Certificate, Multicultural Studies** | University of Missouri-Columbia |
+| **M.S. Systems Engineering** | Johns Hopkins Whiting School of Engineering | 2027 |
+| **B.A. Interdisciplinary Studies** | University of Missouri-Columbia | 2016 |
+| **Certificate, Multicultural Studies** | University of Missouri-Columbia | 2016 |
 
 ---
 
@@ -154,12 +154,12 @@ Currently driving technical programs at **Google Public Sector**, bringing toget
 ```
                     ┌─────────────────────────────────────┐
                     │           TrueNAS Server            │
-                    │  ┌─────────────┬─────────────────┐  │
-                    │  │   Movies    │    TV Shows     │  │
-                    │  │   (NFS)     │     (NFS)       │  │
-                    │  └──────┬──────┴────────┬────────┘  │
+                    │  ┌──────────────────────────────┐   │
+                    │  │             Media            │   │
+                    │  │             (NFS)            │   │
+                    │  └──────┬───────────────┬───────┘   │
                     │         │               │           │
-                    │    Longhorn Backups     │           │
+                    │          Longhorn Backups           │
                     └─────────┼───────────────┼───────────┘
                               │               │
         ┌─────────────────────┼───────────────┼─────────────────────┐
