@@ -108,6 +108,12 @@ Currently driving technical programs at **Google Public Sector**, bringing toget
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Alertmanager](https://img.shields.io/badge/Alertmanager-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 
+### AI/ML Tools
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![vLLM](https://img.shields.io/badge/vLLM-5C2D91?style=flat-square&logo=v&logoColor=white)
+![Ray](https://img.shields.io/badge/Ray/KubeRay-028CF0?style=flat-square&logo=ray&logoColor=white)
+
 </div>
 
 ---
