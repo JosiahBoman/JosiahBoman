@@ -1,83 +1,124 @@
-Hello! I'm Josiah 👋
+<div align="center">
 
-I have been working as a Technical Program Manager (TPgM) and Systems Engineer (SysEng) since 2016 specializing in platform engineering.
+# Josiah Boman
 
-[![linkedinicon](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/josiahboman/)
-[![gmailicon](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@josiahboman.com)
+### Technical Program Manager | Systems Engineer | Platform Engineering
+
+*Building scalable infrastructure and leading technical programs since 2016*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/josiahboman/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@josiahboman.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JosiahBoman)
+
+</div>
 
 ---
 
-My homelab k8s stack:
+## About Me
 
-**Infrastructure (3x ASUS NUC 155h)**
+I'm a **Technical Program Manager (TPgM)** and **Systems Engineer** with expertise in **platform engineering**. With nearly a decade of experience, I specialize in designing, implementing, and managing complex infrastructure systems. My passion lies at the intersection of technical excellence and strategic program delivery.
 
-✅ 3-node HA control plane running Kubernetes v1.35.0
-✅ Stacked etcd cluster with 3 voting members for high availability
-✅ kube-vip providing VIP failover
-✅ Flannel CNI for pod networking (fixed br_netfilter issues on all nodes)
-✅ Control plane taints removed - nodes can run workloads
-✅ Swap disabled on all nodes for Kubernetes compatibility
+---
 
-**Networking & Load Balancing**
+## Technical Skills
 
-✅ MetalLB installed and configured
-✅ L2 advertisement for LoadBalancer services
-✅ NFS client installed on all nodes for storage access Distributed Storage
-✅ Longhorn deployed with 3-replica redundancy across nodes
-✅ 50GB default replica count for high availability
-✅ NFS backup target configured to TrueNAS (:/mnt/tank0/kubernetes/longhorn-backups)
-✅ Longhorn UI accessible
-✅ Backup/restore functionality tested and working
+<div align="center">
 
-**GPU Support**
+### Infrastructure & Orchestration
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
+![etcd](https://img.shields.io/badge/etcd-419EDA?style=flat-square&logo=etcd&logoColor=white)
 
-✅ Intel GPU device plugin installed on all 3 nodes
-✅ Hardware transcoding ready (gpu.intel.com/i915 available on all nodes)
+### Networking & Storage
+![Flannel](https://img.shields.io/badge/Flannel_CNI-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![MetalLB](https://img.shields.io/badge/MetalLB-FF6600?style=flat-square&logo=kubernetes&logoColor=white)
+![NFS](https://img.shields.io/badge/NFS-0078D4?style=flat-square&logo=files&logoColor=white)
+![Longhorn](https://img.shields.io/badge/Longhorn-5F259F?style=flat-square&logo=rancher&logoColor=white)
 
-**Monitoring & Management StackDashboards & Observability**
+### Monitoring & Observability
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Alertmanager](https://img.shields.io/badge/Alertmanager-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 
-✅ Kubernetes Dashboard
-✅ Admin user created with cluster-admin access
-✅ Bearer token authentication configured
-✅ Prometheus Metrics collection and querying
-✅ Grafana
-✅ Pre-configured Kubernetes dashboards
-✅ Connected to Prometheus data source
-✅ Alertmanager configured
+### Hardware & Systems
+![Intel](https://img.shields.io/badge/Intel-0071C5?style=flat-square&logo=intel&logoColor=white)
+![TrueNAS](https://img.shields.io/badge/TrueNAS-0095D5?style=flat-square&logo=truenas&logoColor=white)
+![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
 
-**Plex Media Server Deployment**
+</div>
 
-✅ Plex running in the media namespace
-✅ Local access & Tailscale access
-✅ Intel Quick Sync GPU passthrough for hardware transcoding
-✅ 50GB Longhorn PVC for config/metadata (replicated across nodes)
+---
 
-**Media Storage**
+## Homelab Infrastructure
 
-✅ NFS volumes mounted from TrueNAS (Movies: /mnt → /movies, TV Shows: /mnt → /television)
-✅ Read-only mounts for media protection
-✅ NFS exports configured correctly on TrueNAS
+> *Production-grade Kubernetes cluster running on 3x ASUS NUC 155h*
 
-**Security & Access**
+### Cluster Architecture
 
-✅ Tailscale sidecar configured with proper RBAC
-✅ ServiceAccount and Role created for Tailscale permissions
-✅ Connected to Tailscale (visible in admin console)
-✅ MetalLB LoadBalancer for local network access
+| Component | Configuration |
+|-----------|---------------|
+| **Control Plane** | 3-node HA with Kubernetes v1.35.0 |
+| **etcd** | Stacked cluster with 3 voting members |
+| **VIP Failover** | kube-vip for high availability |
+| **CNI** | Flannel for pod networking |
+| **Load Balancer** | MetalLB with L2 advertisement |
 
-**Storage Infrastructure **
+### Storage Stack
 
-✅ TrueNAS Integration
-✅ NFS shares configured on storage VLAN
-✅ Dataset structure organized
-✅ Proper NFS permissions
-✅ Network access from Kubernetes nodes
+```
+                    ┌─────────────────────────────────────┐
+                    │           TrueNAS Server            │
+                    │  ┌─────────────┬─────────────────┐  │
+                    │  │   Movies    │    TV Shows     │  │
+                    │  │   (NFS)     │     (NFS)       │  │
+                    │  └──────┬──────┴────────┬────────┘  │
+                    │         │               │           │
+                    │    Longhorn Backups     │           │
+                    └─────────┼───────────────┼───────────┘
+                              │               │
+        ┌─────────────────────┼───────────────┼─────────────────────┐
+        │                     │   Kubernetes  │                     │
+        │  ┌──────────────────┴───────────────┴──────────────────┐  │
+        │  │              Longhorn (3-replica)                   │  │
+        │  │           50GB HA Distributed Storage               │  │
+        │  └─────────────────────────────────────────────────────┘  │
+        └───────────────────────────────────────────────────────────┘
+```
 
+### GPU & Media Services
 
+| Feature | Status |
+|---------|--------|
+| Intel GPU Plugin | Deployed on all 3 nodes |
+| Hardware Transcoding | Intel Quick Sync (i915) |
+| Plex Media Server | Running with GPU passthrough |
+| Media Storage | NFS mounts (read-only for protection) |
 
+### Monitoring Stack
 
+| Tool | Purpose |
+|------|---------|
+| **Kubernetes Dashboard** | Cluster management with admin access |
+| **Prometheus** | Metrics collection and querying |
+| **Grafana** | Pre-configured K8s dashboards |
+| **Alertmanager** | Alerting and notifications |
 
+### Network & Security
 
+- **Tailscale** - Secure mesh VPN with proper RBAC
+- **MetalLB** - LoadBalancer services for local network
+- **Storage VLAN** - Isolated NFS traffic
+- **ServiceAccount Roles** - Principle of least privilege
 
+---
 
+<div align="center">
 
+### Let's Connect
+
+*Open to discussions about Kubernetes, platform engineering, and infrastructure architecture*
+
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/josiahboman/)
+
+</div>
